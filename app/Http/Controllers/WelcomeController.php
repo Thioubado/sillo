@@ -1,14 +1,16 @@
 <?php
 
-namespace App\Http\Controllers;
+/**
+ * (ɔ) LARAVEL.Sillo.org - 2015-2024
+ */
 
-use Illuminate\Http\Request;
+namespace App\Http\Controllers;
 
 class WelcomeController extends Controller
 {
-    //
-    public function index ()
-    {
-        return view('welcome');
-    }
+	public function index()
+	{
+		// return 'ok2';
+		return view('welcome');
+	}
 }
