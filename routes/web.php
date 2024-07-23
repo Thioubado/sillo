@@ -5,7 +5,14 @@
  */
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\WelcomeController;
 
 // Routes publiques
-Route::get('/', Welcome::class);
+ Route::get('/welcome', [WelcomeController::class, 'index']);
+
+// Route::get('/', function () {
+//     // event(new Accueil);
+//     return view('welcome');
+
+// });
 
