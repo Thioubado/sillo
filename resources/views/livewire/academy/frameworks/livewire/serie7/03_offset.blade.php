@@ -26,7 +26,7 @@ new class() extends Component {
 		$this->name = 'GC7';
 		if (0 == $offset) {
 			$this->dispatch('update-subtitle', newSubtitle: $this->subtitle);
-			logger('Dispatching update-subtitle event');
+				logger('Dispatching update-subtitle event (for '.$this->subtitle.')');
 		}
 
 		$this->loadMore = $loadMore;

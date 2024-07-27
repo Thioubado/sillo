@@ -13,7 +13,13 @@ new class() extends Component {
 	public function mount($loadMore = true, $offset = 0)
 	{
 		$this->dispatch('update-subtitle', newSubtitle: $this->subtitle);
-		logger('Dispatching update-subtitle event');
+		
+/**
+ * (ɔ) LARAVEL.Sillo.org - 2015-2024
+ */
+
+logger('Dispatching update-subtitle event (for ' . $this->subtitle . ')');
+
 	}
 
 	public function with(): array

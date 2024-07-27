@@ -22,7 +22,13 @@ new class() extends Component {
 	{
 		$this->name = 'GC7';
 		$this->dispatch('update-subtitle', newSubtitle: $this->subtitle);
-		logger('Dispatching update-subtitle event');
+		
+/**
+ * (ɔ) LARAVEL.Sillo.org - 2015-2024
+ */
+
+logger('Dispatching update-subtitle event (for ' . $this->subtitle . ')');
+
 	}
 
 	public function doSort($column)

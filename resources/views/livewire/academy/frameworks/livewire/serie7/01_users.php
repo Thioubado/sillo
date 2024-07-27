@@ -25,7 +25,7 @@ class() extends Component {
 		$this->name = 'GC7';
 
 		$this->dispatch('update-subtitle', newSubtitle: $this->subtitle);
-		logger('Dispatching update-subtitle event');
+		logger('Dispatching update-subtitle event (for '.$this->subtitle.')');
 	}
 
 	public function doSort($column)
