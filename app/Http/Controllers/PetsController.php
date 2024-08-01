@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 class PetsController extends Controller
 {
     //
-    public function pets()
+    public function index()
 	{
 		// return 'ok2';
-		return 'ok';
+		return view('pet');
 	}
 }
