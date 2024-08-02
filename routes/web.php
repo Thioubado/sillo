@@ -4,6 +4,7 @@
  * (ɔ) LARAVEL.Sillo.org - 2015-2024
  */
 
+use App\Http\Controllers\AccordionController;
 use App\Http\Controllers\PetsController;
 use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
@@ -12,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [WelcomeController::class, 'index'])->name('home)');
 
 Route::get('/pet', [PetsController::class, 'index'])->name('pet)');
+
+Route::get('/accordion', [AccordionController::class, 'index'])->name('accordion');
 
 // Route::get('/', function () {
 //     // event(new Accueil);
